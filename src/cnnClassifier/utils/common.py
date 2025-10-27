@@ -10,4 +10,10 @@ from pathlib import Path
 from typing import Any
 import base64
 
-##
+
+@ensure_annotations
+def read_yaml(path_toyaml: Path)-> ConfigBox:
+    """
+    reads yaml file and returns
+    
+    """
