@@ -15,9 +15,10 @@ import dagshub
 import logging
 
 
-import dagshub
+
 dagshub.init(repo_owner='prajwaldev20', repo_name='MLflow-Test', mlflow=True)
 
+print("Tracking URI:", mlflow.get_tracking_uri())
 
 
 logging.basicConfig(level=logging.WARN)
@@ -79,8 +80,8 @@ if __name__ == "__main__":
 
         
         # For remote server only (Dagshub)
-        remote_server_uri = "https://github.com/prajwaldev20/MLflow-Test.git"
-        mlflow.set_tracking_uri(remote_server_uri)
+       # remote_server_uri = "https://github.com/prajwaldev20/MLflow-Test.git"
+        # mlflow.set_tracking_uri(remote_server_uri)
 
 
 
