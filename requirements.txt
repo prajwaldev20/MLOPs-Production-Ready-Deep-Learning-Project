@@ -16,5 +16,5 @@ types-pyYAML
 scipy
 Flask
 Flask-Cors
-
+dagshub
 -e .
