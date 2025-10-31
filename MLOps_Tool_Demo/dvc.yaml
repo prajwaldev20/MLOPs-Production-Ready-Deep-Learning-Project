@@ -1,11 +1,11 @@
 stages:
   stage_01:
-    cmd: python pipeline/stage_01.py
+    cmd: pipeline/stage_01.py
     deps:
     - pipeline/stage_01.py
   
   stage_02:
-    cmd: python pipeline/stage_02.py
+    cmd: pipeline/stage_02.py
     #deps:
     #- pipeline/stage_02.py
     outs:
